@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    </link>
+</head>
+
+<body>
+    <header>
+
+        <h1 id="title">FCC Survey Form</h1>
+        <p id="description">I just want to get to know my fellow FCC students. Very basic, very informal.</p>
+
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="input-headings">
+                <label for="name" id="name-label"><b>Please enter your name: </b></label>
+                <input id="name" type="text" required placeholder="Elena Example" class="form-inputs">
+                <br>
+                <label for="email" id="email-label"><b>Please enter your e-mail: </b></label>
+                <input id="email" type="email" required placeholder="Elena@Example.net" class="form-inputs">
+                <br>
+                <label for="number" id="number-label"><b>Please enter your age: </b></label>
+                <input id="number" type="number" min="5" max="120" required placeholder="Age" class="form-inputs">
+                <br>
+                <label for="dropdown"><b>Are you new to web development?</b></label>
+
+                <select id="dropdown" class="form-inputs">
+                    <option>Select one</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <br>
+                <br>
+                <label for="home continent" id="home continent"><b>What Part of the world are you from?</b></label>
+                <br>
+                <br>
+                <input type="radio" name="radio-group" id="africa" value="0">
+                <label for="africa"> Africa</label>
+                <br>
+                <input type="radio" name="radio-group" id="north america" value="1">
+                <label for="north america"> North America</label>
+                <br>
+                <input type="radio" name="radio-group" id="south america" value="3">
+                <label for="south america"> South America</label>
+                <br>
+                <input type="radio" name="radio-group" id="asia" value="4">
+                <label for="asia"> Asia</label>
+                <br>
+                <input type="radio" name="radio-group" id="oceania" value="5">
+                <label for="oceania"> Oceania</label>
+                <br>
+                <input type="radio" name="radio-group" id="europe" value="6">
+                <label for="europe"> Europe</label>
+                <br>
+                <br>
+                <label><b>Are you using any of these other platforms to learn web development? Please select all that
+                        apply: </b></label>
+                <br>
+                <br>
+                <input type="checkbox" value="0" id="the odin project">
+                <label for="the odin project"> The Odin Project</label>
+                <br>
+                <input type="checkbox" value="1" id="codeacademy">
+                <label for="codeacademy"> Codeacademy</label>
+                <br>
+                <input type="checkbox" value="2" id="scrimba">
+                <label for="scrimba"> Scrimba</label>
+                <br>
+                <input type="checkbox" value="3" id="coursera">
+                <label for="coursera"> Coursera</label>
+                <br>
+                <input type="checkbox" value="4" id="udemy">
+                <label for="udemy"> Udemy</label>
+                <br>
+                <input type="checkbox" value="5" id="none">
+                <label for="none"> None, FCC is my only course</label>
+                <br>
+                <input type="checkbox" value="6" id="other">
+                <label for="other"> Other (please specify below)</label>
+                <br>
+                <br>
+                <label id="textarea"><b>If you selected "Other": Please specify what other web development courses you are taking.</b></label>
+                <textarea id="other courses" name="other-courses" rows="5" cols="40">What other courses are you taking?
+                </textarea>
+                <br>
+                <br>
+                <label id="comments"><b>Any questions, comments or concerns?</b></label>
+                <textarea rows="5" cols="40">Drop them here!</textarea>
+                <br>
+                <br>
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
